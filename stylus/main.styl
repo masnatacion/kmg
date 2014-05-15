@@ -3,7 +3,7 @@ $PATH_IMG 	= $PATH_ROOT"img/"
 $COLOR_ROJO = #ae2a1f
 $COLOR_ROJO_OBSCURO = #711b14
 $COLOR_AMARILLO = #e7d056
-
+$COLOR_GRIS = #333
 
 @import "normalize.styl"
 @import "fonts.styl"
@@ -11,6 +11,7 @@ $COLOR_AMARILLO = #e7d056
 @import "header.styl"
 @import "footer.styl"
 @import "home.styl"
+@import "category.styl"
 
 body
 	color white
@@ -22,6 +23,7 @@ body
 			-webkit-filter blur(6px)
 			filter blur(6px)
 			filter url($PATH_IMG'blur.svg#blur')
+			opacity 0.3
 	&:before
 		background url($PATH_IMG'bg/home.jpg')
 		height 850px
