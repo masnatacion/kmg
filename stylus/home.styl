@@ -25,10 +25,21 @@
 	float: left;
 	font-size 1em
 
+.locations
+	&:before
+		background black
+		position absolute
+		height 140px
+		bottom 0
+		content ""
+		left 0
+		opacity 0.5
+		right 0
+		z-index -1
+	.location
+		font-family 'DIN-Condensed-Bold',sans-serif
+		font-size 1.5em
 
-.location
-	font-family 'DIN-Condensed-Bold',sans-serif
-	font-size 1.5em
 
 .places
 	li
