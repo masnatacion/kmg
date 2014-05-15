@@ -1,0 +1,55 @@
+$PATH_ROOT 	= "../"
+$PATH_IMG 	= $PATH_ROOT"img/"
+$COLOR_ROJO = #ae2a1f
+$COLOR_AMARILLO = #e7d056
+
+
+@import "normalize.styl"
+@import "fonts.styl"
+@import "header.styl"
+@import "footer.styl"
+@import "home.styl"
+
+body
+	color white
+	font-family 'DIN-Regular'
+	font-size 20px
+	&.filter
+		&:before
+			-moz-filter blur(6px)
+			-webkit-filter blur(6px)
+			filter blur(6px)
+			filter url($PATH_IMG'blur.svg#blur')
+	&:before
+		background url($PATH_IMG'bg/home.jpg')
+		bottom 0
+		content ""
+		left 0
+		opacity 0.5
+		position absolute
+		right 0
+		top 0
+		z-index -1
+a
+	text-decoration none
+
+figure
+	margin 0
+img
+	vertical-align top
+ul
+	margin 0
+	padding 0
+
+.opacity
+	background black
+
+.wrap
+	width 1000px	
+	margin 0 auto	
+
+.contenido
+	padding 2.3em 0 .5em 0
+
+section
+	overflow: hidden;
