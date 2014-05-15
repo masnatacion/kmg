@@ -1,6 +1,5 @@
 $(".places li").click(function(){
 
-	console.log(1)
 	var place = "https://www.google.com.mx/maps/place/";
 	switch($(this).attr("class"))
 	{
@@ -18,4 +17,9 @@ $(".places li").click(function(){
 	}
 
 	window.open(place,'_blank');
-})
+});
+
+$("#logo").click(function(){
+
+	document.location.href = "./"
+});
