@@ -5,6 +5,7 @@ $COLOR_ROJO_OBSCURO = #711b14
 $COLOR_AMARILLO = #e7d056
 $COLOR_GRIS = #333
 
+@import "nib"
 @import "normalize.styl"
 @import "fonts.styl"
 @import "flaticon.styl"
@@ -19,8 +20,6 @@ body
 	font-size 15px
 	&.filter
 		&:before
-			-moz-filter blur(6px)
-			-webkit-filter blur(6px)
 			filter blur(6px)
 			filter url($PATH_IMG'blur.svg#blur')
 			opacity 0.3
