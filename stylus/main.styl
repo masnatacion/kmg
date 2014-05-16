@@ -26,10 +26,11 @@ body
 			filter: url("../img/blur.svg#blur");
 			opacity 0.3		
 	&:before
-		background url($PATH_IMG'bg/home.jpg')
-		height 850px
+		background url($PATH_IMG'bg/home.jpg') no-repeat
+		background-position center
 		bottom 0
 		content ""
+		height 850px
 		left 0
 		opacity 0.5
 		position absolute
@@ -38,7 +39,7 @@ body
 		z-index -1
 	&.menu	
 		&:before		
-			background url($PATH_IMG'bg/menu.jpg')
+			background url($PATH_IMG'bg/menu.jpg') no-repeat
 a
 	text-decoration none
 
