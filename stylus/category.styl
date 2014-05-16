@@ -1,4 +1,5 @@
 .category
+	min-height 600px
 	h1
 		font-size 4em
 		float left
@@ -6,8 +7,12 @@
 		top 30%
 		width 100px
 	.description
+		&.valign
+			position absolute
 		float right
 		width 650px
+		right 0
+		top 30%
 		.title
 			font-size 2em
 			width 100%
@@ -15,5 +20,5 @@
 			font-size 1.2em
 		.subject
 			font-size 1.2em
-			span
-				color $COLOR_AMARILLO
+		span
+			color $COLOR_AMARILLO
